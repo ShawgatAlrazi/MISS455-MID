@@ -48,20 +48,30 @@ nav li a:hover:not(.active) {
     background-color: #4CAF50;
 }
 
-.main.home {
+#home-page .main {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+#home-page .section1,
+#home-page .section2,
+#home-page .section3 {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    gap: 10px;
+}
+#products-page .main {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.main.products {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.product1, .product2, .product3 {
+#products-page .product1,
+#products-page .product2,
+#products-page .product3 {
     border: 1px solid #000;
     padding: 10px;
     text-align: center;
